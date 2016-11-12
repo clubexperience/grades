@@ -127,7 +127,7 @@
 		else {
 			firebase.auth().onAuthStateChanged(function(user) {
 				if (user) {
-					window.location.href = "/home/";
+					window.location.href = "/grades/home/";
 				}
 			});
 		}
@@ -272,7 +272,7 @@
         });
 						
 						if (!getQuery("continue")) {
-							window.location.href = "/home/";
+							window.location.href = "/grades/home/";
 						}
 						else {
 							window.location.href = decodeURIComponent(getQuery("continue"));
